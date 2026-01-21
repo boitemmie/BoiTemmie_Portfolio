@@ -46,7 +46,7 @@ By completing this project, you will demonstrate mastery of:
     * *Bad:* `updates`
 5.  **Push** to your fork.
 6.  **Open a Pull Request (PR)** to the original repository for code review.
-7.  **Wait for Approval** from (https://github.com/Code-Warlock)[Code Warlock] before merging and moving to the next section.
+7.  **Wait for Approval** from [Code Warlock](https://github.com/Code-Warlock) before merging and moving to the next section.
 
 ---
 
