@@ -1,0 +1,120 @@
+ :root {
+   /* Background */
+  --color-bg-main: #020617;
+  --color-bg-secondary: #0206179f;
+
+  /* Text */
+  --color-text-primary: #E5E7EB;
+  --color-text-secondary: #9CA3AF;
+
+  /* Accents */
+  --color-accent: #FBBF24;      /* yellow */
+  --color-accent-alt: #38BDF8;  /* blue */
+
+  /* Borders / lines */
+  --color-border: #1E293B;
+
+     /* FONT FAMILIES */
+  
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+ 
+     /* FONT WEIGHTS */
+
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+
+     /* FONT SIZES */
+  --text-base: 1rem;    /* 16px */
+  --text-lg: 1.125rem;  /* 18px */
+  --text-xl: 1.25rem;   /* 20px */
+  --text-2xl: 1.5rem;   /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.25rem;  /* 36px */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg-main);
+    color: var(--color-text-primary);
+}
+
+.intro {
+    background:
+    linear-gradient(to right, rgba(2,6,23,0.85), rgba(2,6,23,0.6)),
+    url("./images/backgroug-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+header {
+    background-color: transparent;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--color-text-primary) !important;
+
+}
+
+.nav-link:hover {
+    color: var(--color-text-secondary) !important;
+}
+.navbar-toggler {
+    border: none !important;
+    color: var(--color-text-primary) !important;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    transition: background-color 0.3s;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.navbar-toggler:hover {
+    background-color: var(--color-accent-alt) !important;
+  }
+
+.navbar-toggler:focus {
+    box-shadow: none;
+  } 
+
+  img {
+    40%
+  }
+
+  .tools-list {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-bg-secondary);
+    font-size: var(--text-lg);
+    font-weight: var(--font-bold);
+    color: var(--color-text-secondary);
+  }
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
