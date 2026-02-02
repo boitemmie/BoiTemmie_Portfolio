@@ -517,11 +517,16 @@
 
         <div class="row justify-content-center">
           <div class="col-md-8">
-            <form class="contact-form">
+            <form
+              class="contact-form"
+              action="https://formspree.io/f/mojlpgpd"
+              method="post"
+            >
               <div class="row gy-4">
                 <div class="col-md-6">
                   <input
                     type="text"
+                    name="namw"
                     class="form-control"
                     placeholder="Your Name"
                     required
@@ -531,6 +536,7 @@
                 <div class="col-md-6">
                   <input
                     type="email"
+                    name="email"
                     class="form-control"
                     placeholder="Your Email"
                     required
@@ -541,13 +547,18 @@
                   <textarea
                     rows="5"
                     class="form-control"
+                    name="Message"
                     placeholder="Your Message"
                     required
                   ></textarea>
                 </div>
 
                 <div class="col-12 text-center buttons">
-                  <button type="submit" class="btn btn-warning btn-lg">
+                  <button
+                    type="submit"
+                    name="submit"
+                    class="btn btn-warning btn-lg"
+                  >
                     Send Message
                   </button>
 
