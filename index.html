@@ -196,6 +196,7 @@
         </div>
       </div>
     </section>
+
     <!-- Projects Section -->
 
     <section id="projects" class="projects-section">
@@ -518,49 +519,56 @@
         <div class="row justify-content-center">
           <div class="col-md-8">
             <form
+              id="contact-form"
               class="contact-form"
               action="https://formspree.io/f/mojlpgpd"
               method="post"
             >
               <div class="row gy-4">
                 <div class="col-md-6">
-                  <input
-                    type="text"
-                    name="Name"
-                    class="form-control"
-                    placeholder="Your Name"
-                    required
-                  />
+                  <div class="contact-group">
+                    <input
+                      type="text"
+                      name="Name"
+                      class="form-control"
+                      placeholder="Your Name"
+                      id="contact-name"
+                    />
+                    <span id="name-error"></span>
+                  </div>
                 </div>
 
                 <div class="col-md-6">
-                  <input
-                    type="email"
-                    name="Email"
-                    class="form-control"
-                    placeholder="Your Email"
-                    required
-                  />
+                  <div class="contact-group">
+                    <input
+                      type="email"
+                      name="Email"
+                      class="form-control"
+                      placeholder="Your Email"
+                      id="contact-email"
+                    />
+                    <span id="email-error"></span>
+                  </div>
                 </div>
 
                 <div class="col-12">
-                  <textarea
-                    rows="5"
-                    class="form-control"
-                    name="Message"
-                    placeholder="Your Message"
-                    required
-                  ></textarea>
+                  <div class="contact-group">
+                    <textarea
+                      rows="5"
+                      class="form-control"
+                      name="Message"
+                      placeholder="Your Message"
+                      id="contact-message"
+                    ></textarea>
+                    <span id="message-error"></span>
+                  </div>
                 </div>
 
                 <div class="col-12 text-center buttons">
-                  <button
-                    type="submit"
-                    name="submit"
-                    class="btn btn-warning btn-lg"
-                  >
+                  <button type="submit" class="btn btn-warning btn-lg">
                     Send Message
                   </button>
+                  <span id="submit-error"></span>
 
                   <a
                     class="btn btn-lg button-2"
@@ -593,6 +601,7 @@
         ></a>
       </div>
     </footer>
+    <script src="index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

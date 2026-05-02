@@ -311,6 +311,29 @@ body {
   font-size: var(--text-lg);
 }
 
+.contact-group {
+  position: relative;
+}
+
+.contact-group span {
+  color: var(--color-text-secondary-2);
+  opacity: 1;
+  position: absolute;
+  top: 15px;
+  right: 5px;
+}
+
+.contact-form span i {
+  color: green;
+}
+
+#submit-error {
+  margin: 0 0.5rem;
+  color: red;
+  font-size: var(--text-lg);
+  position: relative;
+  top: 3px;
+}
 /* FORM */
 .form-control {
   background: transparent;
